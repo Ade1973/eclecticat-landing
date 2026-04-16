@@ -42,24 +42,31 @@
     header{
       display:flex;
       align-items:center;
-      justify-content:space-between;
+      justify-content:center;
       gap:12px;
       flex-wrap:wrap;
+      text-align:center;
+      margin-bottom: 6px;
     }
     .brand{
       display:flex;
-      align-items:baseline;
+      flex-direction:column;
+      align-items:center;
       gap:10px;
+      width:100%;
     }
-    .brand h1{
-      margin:0;
-      font-size: 28px;
-      letter-spacing: 0.5px;
-      text-shadow: 0 0 18px rgba(0,204,255,0.35);
+    .brand img{
+      display:block;
+      width:min(100%, 560px);
+      max-width:100%;
+      height:auto;
+      filter: drop-shadow(0 0 18px rgba(0,204,255,0.18));
     }
     .brand span{
       color: var(--muted);
       font-size: 13px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
     }
 
     .card{
@@ -149,7 +156,7 @@
   <div class="wrap">
     <header>
       <div class="brand">
-        <h1>EclectiCat</h1>
+        <img src="logoEclectiCat.png" alt="EclectiCat logo" />
         <span>idee • progetti • giochi</span>
       </div>
     </header>
